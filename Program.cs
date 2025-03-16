@@ -5,6 +5,9 @@ class HaloGeneric
     public void SapaUser<T>(T user)
     {
         Console.WriteLine($"Halo user {user}");
+    }
+}
+
 class DataGeneric<T>
 {
     private T data;
@@ -26,9 +29,9 @@ class Program
     {
         HaloGeneric gen = new HaloGeneric();
         gen.SapaUser("Raffa");
-    }
-}
+
         DataGeneric<string> nim = new DataGeneric<string>("103022330138");
         nim.PrintData();
     }
 }
+       
